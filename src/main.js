@@ -11,7 +11,7 @@ import {
   showLoader,
 } from './js/render-functions.js';
 
-const searchForm = document.querySelector('.search-form');
+const searchForm = document.querySelector('form');
 const searchInput = document.querySelector('.search-input');
 const gallery = document.querySelector('.gallery');
 const loadMoreButton = document.querySelector('.load-more-button');
