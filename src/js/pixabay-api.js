@@ -1,17 +1,12 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://pixabay.com/api/';
-const API_KEY = import.meta.env.VITE_PIXABAY_API_KEY;
-//58453364-6b9652d64146c8ee0a8025af6
-console.log('API key loaded:', Boolean(API_KEY));
+const API_KEY = '58453364-6b9652d64146c8ee0a8025af6';
+
 
 
 export async function getImagesByQuery(query, page) {
-  if (!API_KEY) {
-    throw new Error(
-      'Pixabay API key is missing. Add VITE_PIXABAY_API_KEY to the .env file.',
-    );
-  }
+  
 
   const response = await axios.get(BASE_URL, {
     params: {
